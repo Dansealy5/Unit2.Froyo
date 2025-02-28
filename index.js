@@ -7,8 +7,7 @@ const userInputString = prompt(
   const countflavors = (stringArray) => {
     const obj = {};
     for (const flavor in stringArray) {
-        if (obj[stringArray[flavor]]) {
-            obj[stringArray[flavor]] += 1
+        if (obj[stringArray[flavor]] += 1) {
         }
         else {
             obj[stringArray[flavor]] = 1
